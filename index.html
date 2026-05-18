@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Plugs of the World Map | Electrical Outlets by Country</title>
+  <meta name="description" content="Explore an interactive world map showing electrical plug types, outlet standards, voltage, and frequency by country." />
+  <meta name="keywords" content="plug types of the world, electrical outlets by country, travel adapter map, plug type map" />
+  <meta name="author" content="Plug Types of the World" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+
+
+  <!-- Favicon / browser tab logo -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="theme-color" content="#16a34a" />
+
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
+  <link rel="preconnect" href="https://www.power-plugs-sockets.com" crossorigin />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div>
+        <h1>Plugs of the World Map</h1>
+        <p>Explore electrical plug types, outlet standards, voltage, and frequency by country.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-section plug-section" aria-labelledby="plug-title">
+      <div class="plug-heading">
+        <span class="plug-eyebrow">Plug types guide</span>
+        <h2 id="plug-title">Common plug types around the world</h2>
+        <p>Compare common plug standards before exploring the interactive world plug map.</p>
+      </div>
+
+      <div class="plug-card-grid" aria-label="Common plug types">
+        <article class="plug-card">
+          <div class="plug-image" data-plug-image="C"></div>
+          <h3>Type C</h3>
+          <p><strong>Europe</strong></p>
+          <p>Widely used across Europe for chargers and small devices.</p>
+        </article>
+
+        <article class="plug-card">
+          <div class="plug-image" data-plug-image="F"></div>
+          <h3>Type F</h3>
+          <p><strong>Germany</strong></p>
+          <p>Common in Germany and much of continental Europe.</p>
+        </article>
+
+        <article class="plug-card">
+          <div class="plug-image" data-plug-image="G"></div>
+          <h3>Type G</h3>
+          <p><strong>United Kingdom</strong></p>
+          <p>Used in the UK, Ireland, Malta, Cyprus, and related regions.</p>
+        </article>
+
+        <article class="plug-card">
+          <div class="plug-image" data-plug-image="A"></div>
+          <h3>Type A</h3>
+          <p><strong>United States</strong></p>
+          <p>Common in North America, Japan, and Central America.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="layout">
+      <section class="map-area" aria-labelledby="map-title">
+        <h2 id="map-title" class="visually-hidden">World map showing plug types by country</h2>
+
+        <div id="map-wrapper">
+          <div id="map" role="application" aria-label="Interactive world map of electrical plug types"></div>
+        </div>
+
+        <section class="all-plug-types-section" aria-labelledby="all-plug-types-title">
+          <div class="section-heading">
+            <span class="plug-eyebrow">Reference guide</span>
+            <h2 id="all-plug-types-title">All plug types</h2>
+            <p>A simple guide to international plug standards and where they are commonly used.</p>
+          </div>
+
+          <div id="all-plug-types-list" class="all-plug-types-list"></div>
+        </section>
+      </section>
+
+      <aside class="info-panel" aria-label="Plug and country information panel">
+        <h2>Hovered Country</h2>
+
+        <div id="plug-info">
+          <p>Hover over a country to see its plug type.</p>
+        </div>
+
+        <hr class="panel-divider" />
+
+        <h2 id="country-title" class="hidden">Clicked Country</h2>
+
+        <div id="country-info">
+          <p>Click on a country to see plug history, voltage, frequency, and adapter notes.</p>
+        </div>
+      </aside>
+    </div>
+
+    <noscript>
+      <section class="noscript-warning">
+        <h2>JavaScript is required for the interactive plug map</h2>
+        <p>Please enable JavaScript to use the interactive map.</p>
+      </section>
+    </noscript>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
