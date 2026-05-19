@@ -995,3 +995,344 @@ body {
     font-size: 34px;
   }
 }
+
+/* ---------- FINAL MOBILE STACKED LAYOUT: PLUGS WEBSITE ---------- */
+
+.layout .all-plug-types-section {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    padding: 26px 14px 24px;
+  }
+
+  .topbar-inner {
+    width: 100%;
+  }
+
+  .topbar h1 {
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: -0.8px;
+    text-align: center;
+  }
+
+  .topbar p {
+    display: none;
+  }
+
+  .plug-section,
+  .layout {
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Panel 1: plug guide */
+  .plug-section {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 14px;
+    border-radius: 20px;
+    min-height: auto;
+  }
+
+  .plug-section .plug-heading {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .plug-eyebrow {
+    font-size: 7px;
+    padding: 4px 8px;
+    margin-bottom: 6px;
+  }
+
+  .plug-section .plug-heading h2 {
+    font-size: 24px;
+    line-height: 1.05;
+    letter-spacing: -0.7px;
+    text-align: center;
+  }
+
+  .plug-section .plug-heading p {
+    max-width: 96%;
+    margin: 6px auto 0;
+    font-size: 10px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .plug-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .plug-card {
+    min-height: 86px;
+    padding: 7px 3px;
+    border-radius: 13px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .plug-image {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    margin: 0 auto 5px;
+  }
+
+  .plug-photo-img,
+  .top-plug-photo,
+  .reference-plug-photo {
+    padding: 3px;
+  }
+
+  .plug-card h3 {
+    margin: 3px 0 2px;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: -0.2px;
+  }
+
+  .plug-card p {
+    font-size: 7px;
+    line-height: 1.1;
+    margin-bottom: 2px;
+  }
+
+  .plug-card p:last-child {
+    display: none;
+  }
+
+  /* Panel 2: map */
+  .layout {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+
+  .map-area {
+    width: 100%;
+    padding: 0;
+  }
+
+  #map-wrapper {
+    width: 100%;
+    max-width: none;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  #map {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Panel 3: clicked info below map */
+  .info-panel {
+    width: 100%;
+    margin-top: 12px;
+    min-height: auto;
+    max-height: none;
+    position: static;
+    padding: 16px;
+    border-radius: 20px;
+    display: block;
+    border: 1px solid rgba(187, 247, 208, 0.95);
+    box-shadow:
+      0 18px 42px rgba(15, 23, 42, 0.08),
+      0 0 36px rgba(34, 197, 94, 0.10);
+  }
+
+  .info-panel h2 {
+    font-size: 20px;
+    line-height: 1.05;
+    letter-spacing: -0.8px;
+    margin-bottom: 10px;
+  }
+
+  .panel-divider {
+    margin: 14px 0;
+  }
+
+  .info-label {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+
+  .info-value {
+    font-size: 14px;
+  }
+
+  #plug-info > p:not(.info-label):not(.info-value),
+  #country-info > p:not(.info-label):not(.info-value) {
+    max-width: none;
+    font-size: 12px;
+  }
+
+  .main-plug-row {
+    gap: 10px;
+    margin: 8px 0 12px;
+  }
+
+  .main-plug-text {
+    font-size: 28px;
+  }
+
+  .info-panel .large-plug-photo {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+  }
+
+  .plug-detail-card {
+    border-radius: 20px;
+  }
+
+  .plug-detail-header {
+    padding: 12px;
+  }
+
+  .plug-detail-hero {
+    grid-template-columns: 58px 1fr;
+    gap: 10px;
+  }
+
+  .plug-detail-main-photo {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+  }
+
+  .plug-detail-header h3 {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+
+  .plug-detail-header p {
+    font-size: 11px;
+  }
+
+  .plug-detail-body {
+    padding: 12px;
+  }
+
+  .fact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .fact-box {
+    padding: 9px;
+  }
+
+  .fact-label {
+    font-size: 8px;
+  }
+
+  .fact-value {
+    font-size: 11px;
+  }
+
+  .history-box p {
+    font-size: 11px;
+  }
+
+  /* Panel 4: all plug types below clicked panel */
+  .all-plug-types-section {
+    width: 100%;
+    max-width: none;
+    margin-top: 12px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 22px;
+  }
+
+  .section-heading p {
+    font-size: 11px;
+  }
+
+  .all-plug-types-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .type-reference-card {
+    grid-template-columns: 58px 1fr;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .type-reference-card .plug-image {
+    width: 58px;
+    height: 58px;
+  }
+
+  .type-reference-card h3 {
+    font-size: 16px;
+  }
+
+  .type-reference-card p,
+  .type-reference-meta {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 430px) {
+  .topbar h1 {
+    font-size: 21px;
+  }
+
+  .plug-section .plug-heading h2 {
+    font-size: 22px;
+  }
+
+  .plug-section .plug-heading p {
+    font-size: 9px;
+  }
+
+  .plug-card-grid {
+    gap: 4px;
+  }
+
+  .plug-card {
+    min-height: 76px;
+  }
+
+  .plug-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .plug-card h3 {
+    font-size: 11px;
+  }
+
+  .plug-card p {
+    font-size: 6px;
+  }
+
+  #map {
+    height: 280px;
+  }
+
+  .fact-grid {
+    grid-template-columns: 1fr;
+  }
+}

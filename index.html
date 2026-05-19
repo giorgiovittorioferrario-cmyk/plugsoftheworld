@@ -79,10 +79,38 @@
     <div class="layout">
       <section class="map-area" aria-labelledby="map-title">
         <h2 id="map-title" class="visually-hidden">World map showing plug types by country</h2>
-
+    
         <div id="map-wrapper">
           <div id="map" role="application" aria-label="Interactive world map of electrical plug types"></div>
         </div>
+      </section>
+    
+      <aside class="info-panel" aria-label="Plug and country information panel">
+        <h2>Clicked Country</h2>
+    
+        <div id="plug-info">
+          <p>Click on a country to see its plug type.</p>
+        </div>
+    
+        <hr class="panel-divider" />
+    
+        <h2 id="country-title" class="hidden">Clicked Country Details</h2>
+    
+        <div id="country-info">
+          <p>Click on a country to see plug history, voltage, frequency, and adapter notes.</p>
+        </div>
+      </aside>
+    
+      <section class="all-plug-types-section" aria-labelledby="all-plug-types-title">
+        <div class="section-heading">
+          <span class="plug-eyebrow">Reference guide</span>
+          <h2 id="all-plug-types-title">All plug types</h2>
+          <p>A simple guide to international plug standards and where they are commonly used.</p>
+        </div>
+    
+        <div id="all-plug-types-list" class="all-plug-types-list"></div>
+      </section>
+    </div>
 
         <section class="all-plug-types-section" aria-labelledby="all-plug-types-title">
           <div class="section-heading">
